@@ -35,7 +35,7 @@
 			
 		2.2 recognize.py
 		
-			识别人脸。调用face_recognition模块将faceTest文件夹下的学生出勤照片识别成人脸数据并和faceDataset.txt里的数据进行对比。记			录匹配成功的人脸对应的学生的学号并存入数组attend[]里面。同时将出勤照片里的所有的能识别出来的人脸用方框框出来并在窗口faces里显示。
+			识别人脸。调用face_recognition模块将faceTest文件夹下的学生出勤照片识别成人脸数据并和faceDataset.txt里的数据进行对比。记录匹配成功的人脸对应的学生的学号并存入数组attend[]里面。同时将出勤照片里的所有的能识别出来的人脸用方框框出来并在窗口faces里显示。
 			
 		2.3 takePhotos.py
 		
@@ -43,7 +43,7 @@
 			
 		2.4 camareIdentifier.py
 		
-			调用摄像头将识别出来的人脸数据和faceDatSet.txt里的人脸数据进行匹配。并将视频里的人脸和匹配的学生学号标注出来在窗口video里			显示。
+			调用摄像头将识别出来的人脸数据和faceDatSet.txt里的人脸数据进行匹配。并将视频里的人脸和匹配的学生学号标注出来在窗口video显示。
 			
 		2.5 faceDataSet.txt
 		
@@ -53,11 +53,11 @@
 	
 		3.1 初始化人脸数据
 		
-			开始前确保faceDatSet.txt里数据为空；face文件夹里存放了所有人的人脸照片。然后运行iniFaceData.py程序将所有人的人脸数据写入			faceDatSet.txt。如果需要增加、更新、删除学生的人脸照片，那么需要先清空faceDatSet.txt里的所有数据，然后再运行一遍				    iniFaceData.py。
+			开始前确保faceDatSet.txt里数据为空；face文件夹里存放了所有人的人脸照片。然后运行iniFaceData.py程序将所有人的人脸数写入faceDatSet.txt。如果需要增加、更新、删除学生的人脸照片，那么需要先清空faceDatSet.txt里的所有数据，然后再运行一遍iniFaceData.py。
 			
 		3.2 离线点名
 		
-			可以先用手机或者其他拍摄工具对出勤的学生拍照，然后再将照片存入工程目录下的face文件夹。或者直接运行takePhotos.py对学生进行			拍照。照片可以拍很多张。最后再运行recognize.py。程序会输出出勤（attend[]）和缺勤（absent[]）的学生的学号。
+			可以先用手机或者其他拍摄工具对出勤的学生拍照，然后再将照片存入工程目录下的face文件夹。或者直接运行takePhotos.py对学生进行拍照。照片可以拍很多张。最后再运行recognize.py。程序会输出出勤（attend[]）和缺勤（absent[]）的学生的学号。
 			
 		3.3 实时点名
 		
